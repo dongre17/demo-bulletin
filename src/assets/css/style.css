@@ -1,0 +1,63 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #f2f2f2;
+    font-family: Times New Roman;
+}
+.navbar h2{
+    margin: 6px 20px;
+    text-align: center;
+    font-weight: bold;
+    color: blueviolet;
+    padding: 7px;
+    font-family: Times New Roman;
+}
+.weeklyupdates{
+    margin-bottom: 20px;
+}
+.weeklyupdates h3{
+    margin-top: 0px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: blueviolet;
+}
+.weeklyupdates .card{
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px grey;
+    min-height: 160px;
+    background-color: #E3E3E3
+} 
+.weeklyupdates .card-title{
+    background: purple;
+    margin: -1px;
+    padding: 10px;
+    border: 1px transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+} 
+.weeklyupdates .card ul{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    padding: 0px 0px 0px 25px;
+}  
+.weeklyupdates .card a.card-link{
+    padding-left: 10px;
+}
+
+
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+  
