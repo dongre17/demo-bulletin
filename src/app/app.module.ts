@@ -5,12 +5,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodaysFunfactComponent } from './components/todays-funfact/todays-funfact.component';
-import { TodaysThoughtComponent } from './components/todays-thought/todays-thought.component';
-import { TodaysStockComponent } from './components/todays-stock/todays-stock.component';
-import { TodaysSnacksComponent } from './components/todays-snacks/todays-snacks.component';
-import { TodaysExcersiseComponent } from './components/todays-excersise/todays-excersise.component';
-import { TodaysHealthTipsComponent } from './components/todays-health-tips/todays-health-tips.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { A11yModule } from '@angular/cdk/a11y';
@@ -61,13 +55,7 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TodaysFunfactComponent,
-    TodaysThoughtComponent,
-    TodaysStockComponent,
-    TodaysSnacksComponent,
-    TodaysExcersiseComponent,
-    TodaysHealthTipsComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
