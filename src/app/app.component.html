@@ -6,10 +6,18 @@
       <h2>One Team, One Stop</h2>
     </nav>
   </div>
-  <div class="row weeklyupdates">
-    <h3>What's Today</h3>
+  <div>
+    <marquee direction="left" scrolldelay="200" behavior="loop">
+      <b>Announcement:</b>The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+      bred for hunting.
+    </marquee>
+  </div>
 
-    <div class="col-md-4">
+  <div class="row weeklyupdates">
+    <h3>Daily Mantra</h3>
+
+    <div class="col-md-3">
       <mat-card class="example-card">
         <mat-card-header>
           <div mat-card-avatar class="health-header-image"></div>
@@ -26,7 +34,7 @@
       </mat-card>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-3">
       <mat-card class="example-card">
         <mat-card-header>
           <div mat-card-avatar class="funfact-header-image"></div>
@@ -43,7 +51,7 @@
       </mat-card>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-3">
       <mat-card class="example-card">
         <mat-card-header>
           <div mat-card-avatar class="thought-header-image"></div>
@@ -60,6 +68,25 @@
       </mat-card>
     </div>
 
+    <div class="col-md-3">
+
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="thought-header-image"></div>
+          <mat-card-title>Breaking News</mat-card-title>
+          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+          </p>
+        </mat-card-content>
+      </mat-card>
+
+    </div>
+
   </div>
 
   <div class="row weeklyupdates">
@@ -70,7 +97,7 @@
       <mat-card>
         <mat-card-header>
           <div mat-card-avatar class="thought-header-image"></div>
-          <mat-card-title>HR Announcement</mat-card-title>
+          <mat-card-title>HR Events</mat-card-title>
           <mat-card-subtitle>Dog Breed</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
@@ -105,11 +132,10 @@
     </div>
 
     <div class="col-md-4">
-
-      <mat-card class="example-card">
+      <mat-card>
         <mat-card-header>
           <div mat-card-avatar class="thought-header-image"></div>
-          <mat-card-title>Breaking News</mat-card-title>
+          <mat-card-title>HR Announcement</mat-card-title>
           <mat-card-subtitle>Dog Breed</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
@@ -122,104 +148,127 @@
       </mat-card>
 
     </div>
-
   </div>
-
-
-  <!-- End of Header -->
-  <div class="row weeklyupdates">
-    <h3>Weekly Updates</h3>
-
-    <div class="col-md-8">
-      <mat-tab-group mat-align-tabs="start">
-        <mat-tab label="Ribbon Family Birthdays">
-
-          <mat-list>
-            <mat-divider></mat-divider>
-            <div mat-subheader>Birthdays</div>
-            <mat-list-item *ngFor="let birthday of birthdays">
-              <mat-icon mat-list-icon>cake</mat-icon>
-              <div mat-line>{{birthday.Name}}</div>
-              <div mat-line> {{birthday.Date | date}} </div>
-            </mat-list-item>
-          </mat-list>
-
-        </mat-tab>
-        <mat-tab label="Ribbon Work Anniversary">
-
-          <mat-list>
-            <mat-divider></mat-divider>
-            <div mat-subheader>Birthdays</div>
-            <mat-list-item *ngFor="let workAnniversary of workAnniversaries">
-              <mat-icon mat-list-icon>cake</mat-icon>
-              <div mat-line>{{workAnniversary.Name}}</div>
-              <div mat-line> {{workAnniversary.Date | date}} </div>
-            </mat-list-item>
-          </mat-list>
-
-        </mat-tab>
-        <mat-tab label="Ribbon Family Marriage">Content 3</mat-tab>
-        <mat-tab label="Ribbon Family Newborn">Content 3</mat-tab>
-      </mat-tab-group>
-    </div>
-
-    <div class="col-md-4">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Know Your Colleage</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-        <mat-card-content>
-          <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-            bred for hunting.
-          </p>
-        </mat-card-content>
-      </mat-card>
-    </div>
-  </div>
-
 
   <div class="row weeklyupdates">
-    <h3>Monthly Updates</h3>
+    <h3>Employee Corner</h3>
+    <button mat-raised-button (click)="drawer.toggle()">Events</button>
 
-    <div class="col-md-4">
-      <mat-list>
-        <mat-divider></mat-divider>
-        <div mat-subheader>Birthdays</div>
-        <mat-list-item *ngFor="let birthday of birthdays">
-          <mat-icon mat-list-icon>cake</mat-icon>
-          <div mat-line>{{birthday.Name}}</div>
-          <div mat-line> {{birthday.Date | date}} </div>
-        </mat-list-item>
-      </mat-list>
-    </div>
+    <div class="col-md-12">
 
-    <div class="col-md-4">
-      <mat-list>
-        <mat-divider></mat-divider>
-        <div mat-subheader>Birthdays</div>
-        <mat-list-item *ngFor="let birthday of birthdays">
-          <mat-icon mat-list-icon>cake</mat-icon>
-          <div mat-line>{{birthday.Name}}</div>
-          <div mat-line> {{birthday.Date | date}} </div>
-        </mat-list-item>
-      </mat-list>
-    </div>
+      <mat-drawer-container class="example-container">
+        <mat-drawer #drawer mode="over">
 
-    <div class="col-md-4">
-      <mat-list>
-        <mat-divider></mat-divider>
-        <div mat-subheader>Birthdays</div>
-        <mat-list-item *ngFor="let birthday of birthdays">
-          <div mat-line>{{birthday.Name}}</div>
-        </mat-list-item>
-      </mat-list>
+          <mat-tab-group mat-align-tabs="start">
+            <mat-tab label="Ribbon Family Birthdays">
+
+              <mat-list>
+                <mat-divider></mat-divider>
+                <div mat-subheader>Birthdays</div>
+                <mat-list-item *ngFor="let birthday of birthdays">
+                  <mat-icon mat-list-icon>cake</mat-icon>
+                  <div mat-line>{{birthday.Name}}</div>
+                  <div mat-line> {{birthday.Date | date}} </div>
+                </mat-list-item>
+              </mat-list>
+
+            </mat-tab>
+            <mat-tab label="Ribbon Work Anniversary">
+
+              <mat-list>
+                <mat-divider></mat-divider>
+                <div mat-subheader>Birthdays</div>
+                <mat-list-item *ngFor="let workAnniversary of workAnniversaries">
+                  <mat-icon mat-list-icon>cake</mat-icon>
+                  <div mat-line>{{workAnniversary.Name}}</div>
+                  <div mat-line> {{workAnniversary.Date | date}} </div>
+                </mat-list-item>
+              </mat-list>
+
+            </mat-tab>
+            <mat-tab label="Ribbon Family Marriage">Content 3</mat-tab>
+            <mat-tab label="Ribbon Family Newborn">Content 3</mat-tab>
+          </mat-tab-group>
+
+
+        </mat-drawer>
+        <mat-drawer-content>
+
+
+          <div class="col-md-4">
+
+            <mat-card class="example-card">
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Know Your Colleage</mat-card-title>
+                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                alt="Photo of a Shiba Inu">
+              <mat-card-content>
+                <p>
+                  The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                  A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                  bred for hunting.
+                </p>
+              </mat-card-content>
+            </mat-card>
+
+          </div>
+
+
+
+          <div class="col-md-4">
+
+            <mat-card class="example-card">
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Know Your Colleage</mat-card-title>
+                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                alt="Photo of a Shiba Inu">
+              <mat-card-content>
+                <p>
+                  The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                  A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                  bred for hunting.
+                </p>
+              </mat-card-content>
+            </mat-card>
+
+          </div>
+
+
+          <div class="col-md-4">
+
+            <mat-card class="example-card">
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Star Of The Month</mat-card-title>
+                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                alt="Photo of a Shiba Inu">
+              <mat-card-content>
+                <p>
+                  The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                  A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                  bred for hunting.
+                </p>
+              </mat-card-content>
+            </mat-card>
+
+          </div>
+
+
+        </mat-drawer-content>
+      </mat-drawer-container>
     </div>
 
   </div>
+
+
+
 
 </div>

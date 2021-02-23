@@ -8,10 +8,18 @@ export const birthdays: IData[] = [
     { Name : 'RanVijay', Date: new Date('2/25/2021')},
     { Name : 'RanVijay', Date: new Date('2/25/2021')},
     { Name : 'RanVijay', Date: new Date('2/25/2021')},
-    { Name : 'RanVijay', Date: new Date('2/25/2021')}
+   
 ];
 
 export const workAnniversaries: IData[] = [
+    { Name : 'RanVijay', Date: new Date('2/25/2021')},
+    { Name : 'RanVijay', Date: new Date('2/25/2021')},
+    { Name : 'RanVijay', Date: new Date('2/25/2021')},
+    { Name : 'RanVijay', Date: new Date('2/25/2021')}
+   
+];
+
+export const newJon: IData[] = [
     { Name : 'RanVijay', Date: new Date('2/25/2021')},
     { Name : 'RanVijay', Date: new Date('2/25/2021')},
     { Name : 'RanVijay', Date: new Date('2/25/2021')},
