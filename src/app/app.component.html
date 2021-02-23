@@ -3,7 +3,7 @@
   <!-- Start of Header -->
   <div class="row">
     <nav class="navbar navbar-default">
-      <h2>One Team, One Stop</h2>
+      <h2>One Team, One Space</h2>
     </nav>
   </div>
 
@@ -43,36 +43,25 @@
 
       <mat-card>
         <mat-card-header>
-          <div mat-card-avatar class="thought-header-image"></div>
-          <mat-card-title>HR Events</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+          <div mat-card-avatar [class]="content['Ribben_Updates'].HR_Events.className"></div>
+          <mat-card-title>{{content['Ribben_Updates'].HR_Events.title}}</mat-card-title>
+          <mat-card-subtitle>{{content['Ribben_Updates'].HR_Events.subTitle}}</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
           <mat-accordion>
-            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel *ngFor="let event of content['Ribben_Updates'].HR_Events.events"
+              (opened)="panelOpenState = true" (closed)="panelOpenState = false">
               <mat-expansion-panel-header>
                 <mat-panel-title>
-                  Self aware panel
+                  {{event.title}}
                 </mat-panel-title>
                 <mat-panel-description>
-                  Hr Update
+                  {{event.shortDescription}}
                 </mat-panel-description>
               </mat-expansion-panel-header>
-              <p>I'm visible because I am open</p>
-            </mat-expansion-panel>
-            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-              <mat-expansion-panel-header>
-                <mat-panel-title>
-                  Self aware panel
-                </mat-panel-title>
-                <mat-panel-description>
-                  Hr Update
-                </mat-panel-description>
-              </mat-expansion-panel-header>
-              <p>I'm visible because I am open</p>
+              <p>{{event.description}}</p>
             </mat-expansion-panel>
           </mat-accordion>
-
         </mat-card-content>
       </mat-card>
 
@@ -81,16 +70,12 @@
     <div class="col-md-4">
       <mat-card>
         <mat-card-header>
-          <div mat-card-avatar class="thought-header-image"></div>
-          <mat-card-title>HR Announcement</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+          <div mat-card-avatar [class]="content['Ribben_Updates'].HR_Announcement.className"></div>
+          <mat-card-title>{{content['Ribben_Updates'].HR_Announcement.title}}</mat-card-title>
+          <mat-card-subtitle>{{content['Ribben_Updates'].HR_Announcement.subTitle}}</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
-          <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-            bred for hunting.
-          </p>
+          <p> {{content['Ribben_Updates'].HR_Announcement.description}} </p>
         </mat-card-content>
       </mat-card>
 
@@ -99,6 +84,7 @@
 
   <div class="row weeklyupdates">
     <h3>Employee Corner</h3>
+
     <button mat-raised-button (click)="drawer.toggle()">Events</button>
 
     <div class="col-md-12">
@@ -107,36 +93,18 @@
         <mat-drawer #drawer mode="over">
 
           <mat-tab-group mat-align-tabs="start">
-            <mat-tab label="Ribbon Family Birthdays">
-
+            <mat-tab *ngFor="let information of content['Employee_Corner'].Events" [label]="information.title">
               <mat-list>
                 <mat-divider></mat-divider>
-                <div mat-subheader>Birthdays</div>
-                <mat-list-item *ngFor="let birthday of birthdays">
+                <div mat-subheader>{{information.subTitle}}</div>
+                <mat-list-item *ngFor="let event of information.events">
                   <mat-icon mat-list-icon>cake</mat-icon>
-                  <div mat-line>{{birthday.Name}}</div>
-                  <div mat-line> {{birthday.Date | date}} </div>
+                  <div mat-line>{{event.name}}</div>
+                  <div mat-line> {{event.date | date}} </div>
                 </mat-list-item>
               </mat-list>
-
             </mat-tab>
-            <mat-tab label="Ribbon Work Anniversary">
-
-              <mat-list>
-                <mat-divider></mat-divider>
-                <div mat-subheader>Birthdays</div>
-                <mat-list-item *ngFor="let workAnniversary of workAnniversaries">
-                  <mat-icon mat-list-icon>cake</mat-icon>
-                  <div mat-line>{{workAnniversary.Name}}</div>
-                  <div mat-line> {{workAnniversary.Date | date}} </div>
-                </mat-list-item>
-              </mat-list>
-
-            </mat-tab>
-            <mat-tab label="Ribbon Family Marriage">Content 3</mat-tab>
-            <mat-tab label="Ribbon Family Newborn">Content 3</mat-tab>
           </mat-tab-group>
-
 
         </mat-drawer>
         <mat-drawer-content>

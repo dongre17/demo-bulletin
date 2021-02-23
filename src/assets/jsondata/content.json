@@ -29,6 +29,31 @@
             "description": "The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting."
         }
     ],
+    "Ribben_Updates": {
+        "HR_Events": {
+            "title": "HR Events",
+            "subTitle": "Ribben Hr",
+            "className": "health-header-image",
+            "events": [
+                {
+                    "title": "Announcement",
+                    "shortDescription": "description",
+                    "description": "description"
+                },
+                {
+                    "title": "Announcement",
+                    "shortDescription": "description",
+                    "description": "description"
+                }
+            ]
+        },
+        "HR_Announcement": {
+            "title": "HR Announcement",
+            "subTitle": "Ribben Hr",
+            "className": "health-header-image",
+            "description": "The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting."
+        }
+    },
     "Employee_Corner": {
         "Informations": [
             {
@@ -50,6 +75,79 @@
                 "description": "The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting."
             }
         ],
-        "Events": []
+        "Events": [
+            {
+                "title": "Ribbon Family Birthdays",
+                "subTitle": "Birthdays",
+                "events": [
+                    {
+                        "name": "Test 1",
+                        "date": "02/02/2021"
+                    },
+                    {
+                        "name": "Test 2",
+                        "date": "02/16/2021"
+                    },
+                    {
+                        "name": "Test 3",
+                        "date": "02/25/2021"
+                    }
+                ]
+            },
+            {
+                "title": "Ribbon Work Anniversary",
+                "subTitle": "Work Anniversary",
+                "events": [
+                    {
+                        "name": "Test 1",
+                        "date": "02/02/2021"
+                    },
+                    {
+                        "name": "Test 2",
+                        "date": "02/16/2021"
+                    },
+                    {
+                        "name": "Test 3",
+                        "date": "02/25/2021"
+                    }
+                ]
+            },
+            {
+                "title": "Ribbon Family Marriage",
+                "subTitle": "Maggiage Annivarsary",
+                "events": [
+                    {
+                        "name": "Test 1",
+                        "date": "02/02/2021"
+                    },
+                    {
+                        "name": "Test 2",
+                        "date": "02/16/2021"
+                    },
+                    {
+                        "name": "Test 3",
+                        "date": "02/25/2021"
+                    }
+                ]
+            },
+            {
+                "title": "Ribbon Family New Joinee",
+                "subTitle": "New Joinee",
+                "events": [
+                    {
+                        "name": "Test 1",
+                        "date": "02/02/2021"
+                    },
+                    {
+                        "name": "Test 2",
+                        "date": "02/16/2021"
+                    },
+                    {
+                        "name": "Test 3",
+                        "date": "02/25/2021"
+                    }
+                ]
+            }
+        ]
     }
 }
